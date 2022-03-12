@@ -2,24 +2,27 @@
 //
 // Created by Devin Jhu
 // Created on March 2022
-// The proper format "Hello, World!"
+// Simple addition
 
 #include <iostream>
 
 int main() {
     // this function calculates circumference
-    const double TAU = 6.28;
-    int radius;
-    double circumference;
+    int number_one;
+    int number_two;
+    double total;
 
     // input
-    std::cout << "enter radius (mm): ";
-    std::cin >> radius;
+    std::cout << "Enter number (integer): ";
+    std::cin >> number_one;
+    std::cout << "Enter number (integer): ";
+    std::cin >> number_two;
 
     // process
-    circumference = TAU*radius;
+    total = number_one + number_two;
 
     // output
-    std::cout << "" << std::endl;
-    std::cout << "circumference is " << circumference << "mm" << std::endl;
+    std::cout << ""
+            << number_one << " + " << number_two << " = " << total << std::endl;
+    std::cout << "Done."  << std::endl;
 }
